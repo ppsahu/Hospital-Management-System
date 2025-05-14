@@ -1,14 +1,15 @@
 package com.example.HMS.service;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-
 
 import com.example.HMS.models.Patient;
 import com.example.HMS.repository.PatientRepository;
@@ -21,10 +22,11 @@ public class PatientService {
     @Autowired
     private PatientRepository patientRepository;
     
-    public List<Patient> getAllPatients(){
+    public Page<Patient> getAllPatients(int page, int size){
         try{
             System.out.println("into Patient service layer..");
-            return patientRepository.findAll();
+            Pageable pageable = PageRequest.of(page, size);
+            return patientRepository.findAll(pageable);
         }
         catch (Exception e){
             logger.error("An error occured while fetching all patients: {}", e.getMessage(), e);
