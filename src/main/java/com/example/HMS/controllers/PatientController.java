@@ -31,22 +31,22 @@ public class PatientController {
     @PostMapping
     public Patient createPatient(@RequestBody Patient patient){
         System.out.println("Creating patient..");
-        return patientService.createPatient();
+        return patientService.createPatient(patient);
     }
 
     @GetMapping("/{id}")
     public Patient getPatientById(@PathVariable Long id){
         System.out.println("Fetching id by ID");
-        return patientService.getPatientById();
+        return patientService.getPatientById(id);
     }
 
     @DeleteMapping("/{id}")
     public void deletePatient(@PathVariable Long id){
-        patientService.deletePatient();
+        patientService.deletePatient(id);
     }
 
     @PutMapping("/{id}")
-    public void updatePatient(@PathVariable Long id){
-        patientService.updatePatient();
+    public void updatePatient(@PathVariable Long id, @RequestBody Patient updatedPatient){
+        patientService.updatePatient(id, updatedPatient);
     }
 }

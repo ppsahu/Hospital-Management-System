@@ -17,5 +17,4 @@ public class HmsApplication {
 	public String hello(){
 		return "Hello World!!!";
 	}
-
 }
