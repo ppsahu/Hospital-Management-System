@@ -1,10 +1,10 @@
-📁 Hospital-Management-System
+## 📁 Hospital-Management-System
 
 -- Hospital Management System built with Java and Spring Boot
 
 -- A simple yet comprehensive hospital management system developed using Java and Spring Boot. It provides RESTful APIs to manage patient, doctor, appointment, and billing data, and includes built-in support for pagination and system health monitoring via Spring Boot Actuators.
 
-📌 Features
+## 📌 Features
 
 This application includes the following functionalities:
 
@@ -66,24 +66,29 @@ This application includes the following functionalities:
 
 -- Useful for DevOps and cloud deployment monitoring.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 -- Follow the steps below to run this project on your local machine.
 
-🔧 Prerequisites
+## 🔧 Prerequisites
 
 -- Java 17 or above
 
-📥 Clone the Repository
+## 📥 Clone the Repository
 
 -- git clone https://github.com/ppsahu/Hospital-Management-System.git
+
 -- cd Hospital-Management-System
+
 -- Run the HmsApplication.java
+
 -- Go to Postman or any API Client 
+
 -- Hit "http://localhost:8080/api/v1/patients" with GET method, make sure you get 200 OK status
+
 -- Add the data by hitting "http://localhost:8080/api/v1/patients" with POST method
 
-📂 Project Structure
+## 📂 Project Structure
 
 -- controller/ – API layer
 
@@ -93,6 +98,7 @@ This application includes the following functionalities:
 
 -- model/ – Entity classes
 
-🙌 Contributing
+## 🙌 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
