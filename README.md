@@ -56,13 +56,13 @@ This application includes the following functionalities:
 
 ✅ Pagination Support
 
--- Pagination enabled on list endpoints to handle large datasets efficiently.
+-- Pagination is enabled on list endpoints to handle large datasets efficiently.
 
 -- Supports customizable page number and size parameters.
 
 ✅ Spring Boot Actuators
 
--- Exposes health and metrics endpoints to monitor application health and behavior.
+-- Exposes health and metrics endpoints to monitor application health and behaviour.
 
 -- Useful for DevOps and cloud deployment monitoring.
 
@@ -76,17 +76,23 @@ This application includes the following functionalities:
 
 ## 📥 Clone the Repository
 
--- git clone https://github.com/ppsahu/Hospital-Management-System.git
+-- Run -> git clone https://github.com/ppsahu/Hospital-Management-System.git
 
--- cd Hospital-Management-System
+-- Run -> cd Hospital-Management-System
 
 -- Run the HmsApplication.java
 
 -- Go to Postman or any API Client 
 
--- Hit "http://localhost:8080/api/v1/patients" with GET method, make sure you get 200 OK status
+-- Hit "http://localhost:8080/api/v1/patients" with the GET method, make sure you get a 200 OK status
 
--- Add the data by hitting "http://localhost:8080/api/v1/patients" with POST method
+-- Add the data by hitting "http://localhost:8080/api/v1/patients" with the POST method
+
+-- Example -> {
+                  "name": "Reina",
+                  "gender": "female",
+                  "age": 30
+              }
 
 ## 📂 Project Structure
 
